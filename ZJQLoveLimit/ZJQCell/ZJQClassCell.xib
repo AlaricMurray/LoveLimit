@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cate" id="KGk-i7-Jjw" customClass="ZJQClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WoR-Cb-L5R">
+                        <rect key="frame" x="5" y="0.0" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Dje-3h-rQl"/>
+                            <constraint firstAttribute="width" constant="55" id="sYQ-XV-rtk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZU-Id-2l9">
+                        <rect key="frame" x="65" y="0.0" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PV8-nz-055"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRE-EQ-MP4">
+                        <rect key="frame" x="65" y="25" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Bg0-r1-kdd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kZU-Id-2l9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="J0j-tN-dRz"/>
+                    <constraint firstAttribute="trailing" secondItem="kZU-Id-2l9" secondAttribute="trailing" constant="55" id="KN4-Fu-isn"/>
+                    <constraint firstAttribute="trailing" secondItem="RRE-EQ-MP4" secondAttribute="trailing" constant="55" id="LI2-dj-MRV"/>
+                    <constraint firstItem="kZU-Id-2l9" firstAttribute="leading" secondItem="WoR-Cb-L5R" secondAttribute="trailing" constant="5" id="Omr-S0-oBh"/>
+                    <constraint firstItem="RRE-EQ-MP4" firstAttribute="leading" secondItem="WoR-Cb-L5R" secondAttribute="trailing" constant="5" id="evc-BK-SGM"/>
+                    <constraint firstItem="WoR-Cb-L5R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kM8-EC-Pg6"/>
+                    <constraint firstItem="WoR-Cb-L5R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="weO-iD-ssf"/>
+                    <constraint firstItem="RRE-EQ-MP4" firstAttribute="top" secondItem="kZU-Id-2l9" secondAttribute="bottom" constant="4" id="yYn-li-69l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="RRE-EQ-MP4" id="wCJ-yq-BEj"/>
+                <outlet property="iconImageView" destination="WoR-Cb-L5R" id="Amn-Ia-SFe"/>
+                <outlet property="nameLabel" destination="kZU-Id-2l9" id="LxG-55-fOg"/>
+            </connections>
+            <point key="canvasLocation" x="274" y="408"/>
+        </tableViewCell>
+    </objects>
+</document>
